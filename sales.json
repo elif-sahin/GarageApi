@@ -1,0 +1,26 @@
+[
+    {
+        "key": 1,
+        "latitude": 37.69824,
+        "longitude": -122.4324,
+        "description": "Zurna dürüm bulunur.",
+        "title": "Zurnacı",
+        "photo": "./images/zurna.png"
+    },
+    {
+        "key": 2,
+        "latitude": 37.68825,
+        "longitude": -122.4324,
+        "description": "Los Angelesın en kral tornacısı",
+        "title": "Tornacı",
+        "photo": "./images/torna.png"
+    },
+    {
+        "key": 3,
+        "latitude": 37.67825,
+        "longitude": -122.4324,
+        "description": "Overlok makinesi ayağınıza gelmiyor, buradayız.",
+        "title": "Overlokçu",
+        "photo": "./images/overlok.png"
+    }
+]

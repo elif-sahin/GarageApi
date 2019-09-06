@@ -23,7 +23,7 @@ var SaleSchema = new Schema({
     longitude: Number,
     description: String,
     title: { type: String, maxlength: 150 },
-    photoURL: String,
+    photo: String,
 },
     {
         versionKey: false
@@ -70,8 +70,8 @@ app.delete('/api/v1/:id', function (req, res) {
 })
 
 app.put('/api/v1/', function (req, res) {
-    Sale.findByIdAndUpdate(req.body._id, req.body, function (err, data) {
-
+    Sale.findOneAndUpdate({ _id: req.body._id }, req.body, function (err, data) {
+        console.log(req.body);
         if (err) {
             console.log(err);
             return err;
@@ -80,7 +80,7 @@ app.put('/api/v1/', function (req, res) {
     });
 })
 
-app.get('/api/v1/seach/:title', function (req, res) {
+app.get('/api/v1/search/:title', function (req, res) {
     Sale.find({ title: req.params.title }, function (err, data) {
         if (err) {
             console.log(err);
